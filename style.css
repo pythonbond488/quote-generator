@@ -48,6 +48,12 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .quoteBox{
+        width: 360px;
+    }
+}
+
 .quoteBox h2::after {
     content: "";
     border-radius: 3px;
