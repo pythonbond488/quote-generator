@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Manufacturing+Consent&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: "Playfair", serif;
+    background-color: #bbc6fa;
+}
+
+.quoteBox {
+    background-image: url(./blue\ flower.jpg);
+    background-position: left top;
+    background-size: 170px;
+    background-repeat: no-repeat;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.quoteBox h2 {
+    background-image: url(./bgimage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    animation: animate 4s linear infinite;
+    font-family: "Manufacturing Consent", system-ui;
+    font-size: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+@keyframes animate {
+    to{
+        background-position: 600px;
+    }
+}
+
+.quoteBox h2::after {
+    content: "";
+    border-radius: 3px;
+    width: 75px;
+    height: 4px;
+    background-color: rgb(23, 124, 229);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -6px;
+}
+
+.quoteBox blockquote {
+    font-size: 26px;
+    font-style: italic;
+    min-height: 110px;
+}
+
+.quoteBox blockquote::before {
+    content: "“";
+    font-size: 30px;
+    color: rgb(23, 124, 229);
+}
+
+.quoteBox blockquote::after {
+    content: "”";
+    font-size: 30px;
+    color: rgb(23, 124, 229);
+}
+
+.quoteBox span {
+    font-style: italic;
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    float: right;
+    position: relative;
+}
+
+.quoteBox span::before {
+    content: "";
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    background-color: rgb(23, 124, 229);
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btns button {
+    font-style: italic;
+    width: 150px;
+    height: 45px;
+    border: 1px solid rgb(23, 124, 229);
+    border-radius: 25px;
+    background-color: rgb(23, 124, 229);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 6px;
+}
+.btns :nth-child(2) {
+    background-color:transparent;
+    color: rgb(23, 124, 229);
+}
+svg{
+    margin-right: 10px;
+}
+#hindi{
+    font-size: 20px;
+    font-style: italic;
+}
